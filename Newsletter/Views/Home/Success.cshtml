@@ -1,0 +1,41 @@
+﻿@model Newsletter.Models.NewsLetterSign
+
+@{
+    ViewBag.Title = "Success";
+}
+
+<h2>Success</h2>
+
+<div>
+    <h4>Newsletter Signed</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HowHeardAboutUs)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HowHeardAboutUs)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReasonToSigningUp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReasonToSigningUp)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to Home", "Index")
+</p>
